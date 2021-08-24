@@ -1,0 +1,2865 @@
+<!DOCTYPE html>
+<html lang="en" onscroll="scrolled()">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping Site for Mobiles, Electronics, Furniture, Grocery, Lifestyle, Books & More. Best Offers!
+    </title>
+    <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utils.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body class="defaultScroll">
+    <!-- PROGRESS BAR -->
+    <div class="progress_bar"></div>
+    <header>
+        <!-- FLIPKART, EXPLORE PLUS -->
+        <div class="logo">
+            <img class="fl_logo" src="images/flipkart_header.png" alt="">
+            <p id="logo_txt">
+                <span id="txt_1">Explore </span>
+                <span id="txt_2">Plus</span>
+                <i class="uil uil-favorite icon-favorite"></i>
+            </p>
+        </div>
+        <!-- FULL SEARCH BOX -->
+        <div class="search_box">
+            <!-- SEARCH ICON -->
+            <div class="search_button_box">
+                <button class="search-icon" type="submit">
+                    <i id="search_icon" class="uil uil-search icon-search"></i>
+                </button>
+            </div>
+            <!-- SEARCH INPUT:TEXT -->
+            <input type="text" name="search_box" id="search_box" placeholder="Search for products, brands and more">
+            <!-- MICROPHONE -->
+            <div class="search_button_box" id="mic_button_box">
+                <button class="search-icon" type="submit">
+                    <i id="mic_icon" class="uil uil-microphone icon-microphone"></i>
+                </button>
+            </div>
+            <!-- CAMERA CAPTURE -->
+            <div class="search_button_box" id="cam_button_box">
+                <button class="search-icon" type="submit">
+                    <i id="cam_icon" class="uil uil-capture icon-cam"></i>
+                </button>
+            </div>
+        </div>
+        <!-- SEARCH BUTTON -->
+        <div class="search_button_2_box">
+            <button id="search_button_2" type="submit">Search</button>
+        </div>
+        <!-- LOGIN BUTTON -->
+        <button id="login_button" type="submit">Login</button>
+        <div class="sub_menu_box" id="login_sub_box">
+            <div class="sub_menu_head">
+                <p>New Customer?</p>
+                <p id="sign_up">Sign Up</p>
+            </div>
+            <div class="sub_menu_list">
+                <ul>
+                    <li>
+                        <i class="uil uil-user-square"></i>
+                        <p>My Profile</p>
+                    </li>
+                    <li>
+                        <i class="uil uil-favorite"></i>
+                        <p>Flipkart Plus Zone</p>
+                    </li>
+                    <li>
+                        <i class="uil uil-truck"></i>
+                        <p>Orders</p>
+                    </li>
+                    <li>
+                        <i class="uil uil-heart-alt"></i>
+                        <p>Wish List</p>
+                    </li>
+                    <li>
+                        <i class="uil uil-medal"></i>
+                        <p>Rewards</p>
+                    </li>
+                    <li>
+                        <i class="uil uil-gift"></i>
+                        <p>Gift Cards</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- MORE -->
+        <div class="more" id="more_box">
+            <p>More</p>
+            <!-- ARROW -->
+            <i id="arrow" class="uil uil-angle-down icon-arrow"></i>
+        </div>
+        <div class="sub_menu_box" id="more_sub_box">
+            <!-- <img src="images/play_icon.ico" alt=""> -->
+            <div class="sub_menu_list">
+                <ul>
+                    <li>
+                        <i class="uil uil-bell"></i>
+                        <p>Notification Preferences</p>
+                    </li>
+                    <li>
+                        <i class="uil uil-suitcase"></i>
+                        <p>Sell on Flipkart</p>
+                    </li>
+                    <li>
+                        <i class="uil uil-map-marker-question"></i>
+                        <p>24x7 Customer Care</p>
+                    </li>
+                    <li>
+                        <i class="uil uil-arrow-growth"></i>
+                        <p>Advertise</p>
+                    </li>
+                    <li id="get_link">
+                        <i class="uil uil-link-h"></i>
+                        <p>Get Link</p>
+                        <input id="link_input" type="text" value="checkkkk">
+                        <div id="link_copy_pop">
+                            <i class="uil uil-copy"></i>
+                            <span>Link Copied</span>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="uil uil-download-alt"></i>
+                        <p>Download App</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- CART LOGO, CART TXT -->
+        <div class="cart">
+            <i id="cart_logo" class="uil uil-shopping-cart-alt icon-cart"></i>
+            <p>Cart</p>
+        </div>
+        <input id="dark_mode_checkbox" type="checkbox" name="checkbox" id="checkbox" title="Activate dark mode(ctrl+shift+q)">
+        <i class="uil uil-moon" id="moon_icon"></i>
+    </header>
+    <main>
+        <!-- Gallery_1 -->
+        <div class="gallery_1">
+            <div class="item">
+                <img src="images/item_1_img.webp" alt="" id="img_1">
+                <div class="txt">
+                    <p id="item_1_txt">Top Offers</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/item_2_img.webp" alt="" id="img_2">
+                <div class="txt">
+                    <p id="item_2_txt">Grocery</p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/item_3_img.webp" alt="" id="img_3">
+                <div class="txt">
+                    <p id="item_3_txt">Mobiles</p>
+                </div>
+            </div>
+            <div class="item" id="fashion_gallery_item">
+                <img src="images/item_4_img.webp" alt="" id="img_4">
+                <div class="txt">
+                    <p id="item_4_txt">Fashion</p>
+                    <i id="arrow_2" class="uil uil-angle-down icon-arrow"></i>
+                </div>
+            </div>
+            <div class="gallery_sub_box" id="fashion_box">
+                <div class="gallery_items">
+                    <ul>
+                        <li id="fashion_gallery_item_1">
+                            <p>Men's Top Wear</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="fashion_gallery_item_2">
+                            <p>Men's Bottom Wear</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="fashion_gallery_item_3">
+                            <p>Women Ethnic</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="fashion_gallery_item_4">
+                            <p>Women Western</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="fashion_gallery_item_5">
+                            <p>Men Footwear</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="fashion_gallery_item_6">
+                            <p>Women Footwear</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="fashion_gallery_item_7">
+                            <p>Watches and Accessories</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="fashion_gallery_item_8">
+                            <p>Bags, Suitcases and Luggage</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="fashion_gallery_item_9">
+                            <p>Kids</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="fashion_gallery_item_10">
+                            <p>Essentials</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="fashion_gallery_item_11">
+                            <p>Winter</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gallery_sub_items" id="fashion_gallery_sub_items">
+                    <div id="fashion_1">
+                        <p class="gallery_sub_items_header">MORE IN MEN'S TOP WEAR</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Men's T-Shirts</li>
+                            <li>Men's Casual Shirts</li>
+                            <li>Men's Formal Shirts</li>
+                            <li>Men's Kurtas</li>
+                            <li>Men's Ethnic Sets</li>
+                            <li>Men's Blazers</li>
+                            <li>Men's Raincoat</li>
+                            <li>Men's Windcheaters</li>
+                            <li>Men's Suit</li>
+                            <li>Men's Fabrics</li>
+                        </ul>
+                    </div>
+                    <div id="fashion_2">
+                        <p class="gallery_sub_items_header">MORE IN MEN'S BOTTOM WEAR</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Men's Jeans</li>
+                            <li>Men's Trousers</li>
+                            <li>Men's Trackpants</li>
+                            <li>Men's Shorts</li>
+                            <li>Men's Cargos</li>
+                            <li>Men's Threefourths</li>
+                            <li>Men's Pyjamas & Loungepants</li>
+                            <li>Men's Dhoti</li>
+                            <li>Men's Ethnic Pyjama</li>
+                        </ul>
+                    </div>
+                    <div id="fashion_3">
+                        <p class="gallery_sub_items_header">MORE IN WOMEN ETHNIC</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Women Sarees</li>
+                            <li>Women Kurtas & Kurtis</li>
+                            <li>Women Kurta Sets & Salwar Suits</li>
+                            <li>Ethnic Dresses</li>
+                            <li>Women Dress Materials</li>
+                            <li>Women Lehanga Cholis</li>
+                            <li>Woman Legggings & Patialas</li>
+                            <li>Woman Palazzos & Shararas</li>
+                            <li>Women Blouse</li>
+                            <li>Men's Dupatta</li>
+                        </ul>
+                    </div>
+                    <div id="fashion_4">
+                        <p class="gallery_sub_items_header">MORE IN WOMEN WESTERN</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Women Tops</li>
+                            <li>Women Dresses</li>
+                            <li>Women T-shirts & Polo T-shirts</li>
+                            <li>Women Jeans</li>
+                            <li>Women Nighties & Night Dresses</li>
+                            <li>Women Nightsuit</li>
+                            <li>Woman Track Pants</li>
+                            <li>Woman Trouser</li>
+                            <li>Women Jumpsuit</li>
+                            <li>Men's Shapewear</li>
+                            <li>Sports Bra</li>
+                        </ul>
+                    </div>
+                    <div id="fashion_5">
+                        <p class="gallery_sub_items_header">MORE IN MEN FOOTWEAR</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Men's Sport Shoes</li>
+                            <li>Men's Casual Shoes</li>
+                            <li>Men's Scandals & Floaters</li>
+                            <li>Men's Slippers & Flip Flops</li>
+                            <li>Men's Formal Shoes</li>
+                            <li>Men's Ethnic Shoes</li>
+                            <li>Active Footwear</li>
+                            <li>Combo Footwear</li>
+                            <li>Shoe Care</li>
+                        </ul>
+                    </div>
+                    <div id="fashion_6">
+                        <p class="gallery_sub_items_header">MORE IN WOMEN FOOTWEAR</p>
+                        <ul>
+                            <li>Women Flats</li>
+                            <li>Women Heels</li>
+                            <li>Women Hedges</li>
+                            <li>Women Slipper Flip Flops</li>
+                            <li>Women Casual Shoes</li>
+                            <li>Women Sports Shoes</li>
+                            <li>Women Ballerinas</li>
+                            <li>Women Ethnic Shoes</li>
+                            <li>Women Sneakers</li>
+                            <li>Women Walking Shoes</li>
+                            <li>Women Boots</li>
+                        </ul>
+                    </div>
+                    <div id="fashion_7">
+                        <p class="gallery_sub_items_header">WATCHES AND ACCESSORIES</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Men & Women Watches</li>
+                            <li>Men & Women Sunglasses</li>
+                            <li>Wallets</li>
+                            <li>Men & Women Belts</li>
+                            <li>Women Fashion Jewellery</li>
+                            <li>Men Fashion Jewellery</li>
+                            <li>Precious Jewellery</li>
+                            <li>Precious Coins & Bars</li>
+                            <li>Precious Articles</li>
+                            <li>Frames & Contact Lenses</li>
+                            <li>Kids Accessories</li>
+                        </ul>
+                    </div>
+                    <div id="fashion_8">
+                        <p class="gallery_sub_items_header">BAGS, SUITCASES & LUGGAGE</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Bacspacks</li>
+                            <li>Suitcases & Trolleys</li>
+                            <li>Dufflebags</li>
+                            <li>Rucksags</li>
+                            <li>Handbags</li>
+                            <li>Slingbags</li>
+                            <li>Women Clutches & Wallets</li>
+                            <li>Messenger Bags</li>
+                            <li>Travel Accessories</li>
+                        </ul>
+                    </div>
+                    <div id="fashion_9">
+                        <p class="gallery_sub_items_header">MORE IN KIDS</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Girls Dresses</li>
+                            <li>Boys & Girls T-shirts</li>
+                            <li>Boys & Girls Combosets</li>
+                            <li>Boys & Girls Ethnic Wear</li>
+                            <li>Boys & GIrls Jeans</li>
+                            <li>Boys & Girls Shorts</li>
+                            <li>Boys & Girls Trackpants</li>
+                            <li>Boys & Girls Innerwear</li>
+                            <li>Infant Wear</li>
+                            <li>Kids Slipper Flip Flops</li>
+                        </ul>
+                    </div>
+                    <div id="fashion_10">
+                        <p class="gallery_sub_items_header">MORE IN ESSENTIALS</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Men's Briefs & Trunks</li>
+                            <li>Men's Vests</li>
+                            <li>Men's Boxers</li>
+                            <li>Women Lingerie Sets</li>
+                            <li>Women Bra</li>
+                            <li>Women Panty</li>
+                            <li>Women Sarees</li>
+                            <li>Women Kurtas</li>
+                            <li>Women Kurta Sets & Salwar Suits</li>
+                            <li>Boys Innerwear</li>
+                            <li>Girls Innerwear</li>
+                            <li>Women Slipper Flip Flops</li>
+                        </ul>
+                    </div>
+                    <div id="fashion_11">
+                        <p class="gallery_sub_items_header">MORE IN WINTER</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Men's Jackets</li>
+                            <li>Men's Sweatshirts</li>
+                            <li>Men's Sweaters</li>
+                            <li>Men's Thermals</li>
+                            <li>Women's Jackets</li>
+                            <li>Women's Sweatshirts</li>
+                            <li>Women's Sweaters & Cardigans</li>
+                            <li>Women's Shrugs</li>
+                            <li>Kids Sweatshirts</li>
+                            <li>Women Kurtas</li>
+                            <li>Kids Jackets</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item" id="electronics_gallery_item">
+                <img src="images/item_5_img.webp" alt="" id="img_5">
+                <div class="txt">
+                    <p id="item_5_txt">Electronics</p>
+                    <i id="arrow_2" class="uil uil-angle-down icon-arrow"></i>
+                </div>
+            </div>
+            <div class="gallery_sub_box" id="electronics_box">
+                <div class="gallery_items">
+                    <ul>
+                        <li id="electronics_gallery_item_1">
+                            <p>Audio</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="electronics_gallery_item_2">
+                            <p>Cameras & Accessories</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="electronics_gallery_item_3">
+                            <p>Computer Peripherals</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="electronics_gallery_item_4">
+                            <p>Gaming</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="electronics_gallery_item_5">
+                            <p>Health & Personal Care</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="electronics_gallery_item_6">
+                            <p>Laptop Accessories</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="electronics_gallery_item_7">
+                            <p>Laptop & Desktop</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="electronics_gallery_item_8">
+                            <p>Mobile Accessories</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="electronics_gallery_item_9">
+                            <p>Powerbank</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="electronics_gallery_item_10">
+                            <p>Smart Home Automation</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="electronics_gallery_item_11">
+                            <p>Smart Wearables</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="electronics_gallery_item_12">
+                            <p>Storage</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="electronics_gallery_item_13">
+                            <p>Tablets</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gallery_sub_items" id="electronics_gallery_sub_items">
+                    <div id="electronics_1">
+                        <p class="gallery_sub_items_header">MORE IN AUDIO</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Bluetooth Headphones</li>
+                            <li>Wired Headphones</li>
+                            <li>True Wireless Earbuds</li>
+                            <li>Bluetooth Speakers</li>
+                            <li>Soundbars</li>
+                            <li>Home Theatres</li>
+                            <li>TV Streaming Device</li>
+                            <li>Remote Control</li>
+                            <li>DTH Set top Box</li>
+                            <li>Headphones Pouch & Case Covers</li>
+                        </ul>
+                    </div>
+                    <div id="electronics_2">
+                        <p class="gallery_sub_items_header">CAMERAS & ACCESSORIES</p>
+                        <ul>
+                            <li>All</li>
+                            <li>DSLR & Mirrorless</li>
+                            <li>Sports & Action</li>
+                            <li>Point & Shoot</li>
+                            <li>Instant Cameras</li>
+                            <li>Camcoders</li>
+                            <li>Camera Tripods</li>
+                            <li>Camera Lenses</li>
+                            <li>Drone</li>
+                            <li>Flashes</li>
+                            <li>Gimbals</li>
+                            <li>Binoculars</li>
+                            <li>Other Camera Accessories</li>
+                        </ul>
+                    </div>
+                    <div id="electronics_3">
+                        <p class="gallery_sub_items_header">COMPUTER PERIPHERALS</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Printers</li>
+                            <li>Monitors</li>
+                            <li>Projectors</li>
+                            <li>Portable Projectors</li>
+                            <li>Toners</li>
+                            <li>Ink Cartridges</li>
+                            <li>Ink Bottles</li>
+                            <li>Receipt Printers</li>
+                            <li>Lamination Machines</li>
+                            <li>Note Counting Machines</li>
+                            <li>Barcode Scanners</li>
+                            <li>Currency Detectors</li>
+                        </ul>
+                    </div>
+                    <div id="electronics_4">
+                        <p class="gallery_sub_items_header">MORE IN GAMING</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Gaming Consoles</li>
+                            <li>Gaming Mouse</li>
+                            <li>Gaming Keyboards</li>
+                            <li>Gamepads</li>
+                            <li>Games</li>
+                            <li>Accessory Kits</li>
+                            <li>Gaming Accessories Combo</li>
+                            <li>Gaming Mousepads</li>
+                            <li>Membership Cards</li>
+                            <li>Controllers</li>
+                            <li>Other Gaming Accessories</li>
+                            <li>Gaming Components</li>
+                        </ul>
+                    </div>
+                    <div id="electronics_5">
+                        <p class="gallery_sub_items_header">HEALTH & PERSONAL CARE</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Trimmers</li>
+                            <li>Shavers</li>
+                            <li>Hair Straighteners</li>
+                            <li>Hair Dyers</li>
+                            <li>Epilators</li>
+                            <li>Glucometers & Accessories</li>
+                            <li>Blood Pressure Monitors</li>
+                            <li>Digital Thermometers</li>
+                            <li>Weighing Scales</li>
+                            <li>Massagers</li>
+                            <li>Nebulizers</li>
+                            <li>Vaporizers</li>
+                        </ul>
+                    </div>
+                    <div id="electronics_6">
+                        <p class="gallery_sub_items_header">MORE IN LAPTOP ACCESSORIES</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Mouse</li>
+                            <li>Laptop Keyboards</li>
+                            <li>Router</li>
+                            <li>Data Cards</li>
+                            <li>UPS</li>
+                            <li>USB Gadgets</li>
+                            <li>Security Software</li>
+                            <li>Laptop Battery</li>
+                            <li>Laptop Adapter</li>
+                            <li>Wireless USB Adapter</li>
+                            <li>Processor</li>
+                            <li>Other Accessories</li>
+                        </ul>
+                    </div>
+                    <div id="electronics_7">
+                        <p class="gallery_sub_items_header">MORE IN LAPTOPS & DESKTOPS</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Laptops</li>
+                            <li>Gaming Laptops</li>
+                            <li>Desktop PCs</li>
+                            <li>All In One PCs</li>
+                            <li>Mini PCs</li>
+                            <li>Tower PCs</li>
+                            <li>PC Finder</li>
+                            <li>GST Invoice on Laptops</li>
+                            <li>Laptop Buying Guide</li>
+                        </ul>
+                    </div>
+                    <div id="electronics_8">
+                        <p class="gallery_sub_items_header">MORE IN MOBILE ACCESSORIES</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Plain Cases</li>
+                            <li>Designer Cases</li>
+                            <li>Screen Guards</li>
+                            <li>Camera Lens Protectors</li>
+                            <li>Tablet Accessories</li>
+                            <li>Mobile Cable</li>
+                            <li>Mobile Charger</li>
+                            <li>Mobile Pouches</li>
+                            <li>Mobile Flash</li>
+                            <li>Mobile Holder</li>
+                            <li>Mobile USB Gadget</li>
+                            <li>Mobile Accessories Combo</li>
+                        </ul>
+                    </div>
+                    <div id="electronics_9">
+                        <p class="gallery_sub_items_header">MORE IN POWERBANK</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Powerbanks</li>
+                        </ul>
+                    </div>
+                    <div id="electronics_10">
+                        <p class="gallery_sub_items_header">SMART HOME AUTOMATION</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Smart Assistants</li>
+                            <li>Smart Lights</li>
+                            <li>Smart Cameras</li>
+                            <li>Smart Switches</li>
+                            <li>Smart Door Locks</li>
+                            <li>Sensors & Alarms</li>
+                        </ul>
+                    </div>
+                    <div id="electronics_11">
+                        <p class="gallery_sub_items_header">MORE IN SMART WEARABLES</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Smart Watches</li>
+                            <li>Smart Bands</li>
+                            <li>Smart Glasses</li>
+                        </ul>
+                    </div>
+                    <div id="electronics_12">
+                        <p class="gallery_sub_items_header">MORE IN STORAGE</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Mobile Memory Card</li>
+                            <li>Computer Storage Pendrive</li>
+                            <li>Mobile Storage Pendrive</li>
+                            <li>External Hard Drive</li>
+                            <li>Internal Hard Drive</li>
+                            <li>Solid State Drive</li>
+                        </ul>
+                    </div>
+                    <div id="electronics_13">
+                        <p class="gallery_sub_items_header">MORE IN TABLETS</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Tablets With Call Facility</li>
+                            <li>Tablets Without Call Facility</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item" id="home_gallery_item">
+                <img src="images/item_6_img.webp" alt="" id="img_6">
+                <div class="txt">
+                    <p id="item_6_txt">Home</p>
+                    <i id="arrow_2" class="uil uil-angle-down icon-arrow"></i>
+                </div>
+            </div>
+            <div class="gallery_sub_box" id="home_box">
+                <div class="gallery_items">
+                    <ul>
+                        <li id="home_gallery_item_1">
+                            <p>Home Furnishings</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="home_gallery_item_2">
+                            <p>Living Room</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="home_gallery_item_3">
+                            <p>Kitchen & Dining</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="home_gallery_item_4">
+                            <p>Bedroom</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="home_gallery_item_5">
+                            <p>Home Decor</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="home_gallery_item_6">
+                            <p>Tools & Utility</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="home_gallery_item_7">
+                            <p>Lightnings & Electricals</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="home_gallery_item_8">
+                            <p>Space Saving</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="home_gallery_item_9">
+                            <p>Cleaning & Bath</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="home_gallery_item_10">
+                            <p>Kids Furniture</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="home_gallery_item_11">
+                            <p>Pet & Gardening</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gallery_sub_items" id="home_gallery_sub_items">
+                    <div id="home_1">
+                        <p class="gallery_sub_items_header">MORE IN HOME FURNISHINGS</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Bed Linens</li>
+                            <li>Bedsheets</li>
+                            <li>Blankets</li>
+                            <li>Curtains & Accessories</li>
+                            <li>Bath linen</li>
+                            <li>Floor Coverings</li>
+                            <li>Covers & Protectors</li>
+                            <li>Cushions & Pillows</li>
+                            <li>Kitchen Linen Sets</li>
+                            <li>Table Linen Sets</li>
+                            <li>Sofa & Curtain Fabrics</li>
+                            <li>Branded Collections</li>
+                        </ul>
+                    </div>
+                    <div id="home_2">
+                        <p class="gallery_sub_items_header">MORE IN LIVING ROOM</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Sofa Sets & Sectionals</li>
+                            <li>TV Units</li>
+                            <li>Dining Sets</li>
+                            <li>Coffee Tables</li>
+                            <li>Sofa Beds</li>
+                            <li>Recliners</li>
+                            <li>Living Room Chairs</li>
+                            <li>Cabinet & Drawers</li>
+                            <li>Bookshelves</li>
+                            <li>Shoe Racks</li>
+                            <li>Office Tables</li>
+                            <li>Office Chairs</li>
+                        </ul>
+                    </div>
+                    <div id="home_3">
+                        <p class="gallery_sub_items_header">MORE IN KITCHEN & DINING</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Lunchboxes, Bottles & Flasks</li>
+                            <li>Knives, Choppers & Cutters</li>
+                            <li>Gas Stoves & Accessories</li>
+                            <li>Kitchen Tools</li>
+                            <li>Tableware & Dinnerware</li>
+                            <li>Containers & Kitchen Storage</li>
+                            <li>Barware</li>
+                            <li>Bakeware</li>
+                            <li>Handjuicers & Grinders</li>
+                            <li>Disposable Supplies</li>
+                            <li>Outdoor Cooking</li>
+                        </ul>
+                    </div>
+                    <div id="home_4">
+                        <p class="gallery_sub_items_header">MORE IN BEDROOM</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Mattresses</li>
+                            <li>Beds</li>
+                            <li>Wardrobes</li>
+                            <li>Side Tables</li>
+                            <li>TV Units</li>
+                            <li>Office Tables</li>
+                            <li>Office Chairs</li>
+                            <li>Bookshelves</li>
+                            <li>Bar Cabinets</li>
+                            <li>Bar Stools</li>
+                            <li>Rocking Chairs</li>
+                            <li>Benches</li>
+                        </ul>
+                    </div>
+                    <div id="home_5">
+                        <p class="gallery_sub_items_header">MORE IN HOME DECOR</p>
+                        <ul>
+                            <li>All
+                            <li>Lightnings</li>
+                            <li>Stickers & Wallpapers</li>
+                            <li>Paintings & Posters</li>
+                            <li>Clocks</li>
+                            <li>Showpieces & Decoratives</li>
+                            <li>Wall Decor</li>
+                            <li>Flower & Vases</li>
+                            <li>Home Fragrances</li>
+                            <li>Windchimes & Dream Catcher</li>
+                            <li>Photo Frames & ALbums</li>
+                            <li>Divyas, Candles & Holders</li>
+                            <li>Festive & Gifting</li>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="home_6">
+                        <p class="gallery_sub_items_header">MORE IN TOOLS & UTILITY</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Hand Tools</li>
+                            <li>Power Tools</li>
+                            <li>Measuring Tools</li>
+                            <li>Home Storage & Organizers</li>
+                            <li>Umbrellas</li>
+                            <li>Appliance Trolley & Stands</li>
+                            <li>Cloth Dryer Stand</li>
+                            <li>Appliance Filter & Cartridges</li>
+                            <li>Laundry Organization</li>
+                            <li>Lock & Security</li>
+                            <li>Fire & Personal Safety</li>
+                            <li>Paint Supplies & Equipments</li>
+                        </ul>
+                    </div>
+                    <div id="home_7">
+                        <p class="gallery_sub_items_header">LIGHTNING ESSENTIALS</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Bulbs</li>
+                            <li>Emergency Lights</li>
+                            <li>Torches</li>
+                            <li>Tubelights</li>
+                            <li>Extension Cords</li>
+                            <li>Outdoor Lamps</li>
+                            <li>Batteries</li>
+                            <li>Electrical Wires</li>
+                            <li>Electrical Sockets</li>
+                            <li>Electrical Door Bells</li>
+                            <li>Solar Lights, Panels & Batteries</li>
+                            <li>Electrical Hardware</li>
+                        </ul>
+                    </div>
+                    <div id="home_8">
+                        <p class="gallery_sub_items_header">MORE IN SPACE SAVING</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Portable Laptop Tables</li>
+                            <li>Collapsable Wardrobes</li>
+                            <li>Bean Bags & Covers</li>
+                            <li>Shoe Racks</li>
+                            <li>Cabinet Drawers</li>
+                            <li>Inflatable Sofas</li>
+                            <li>Hammock Swings</li>
+                            <li>Home Temples</li>
+                            <li>Book Shelves</li>
+                            <li>TV Mounts</li>
+                            <li>Kitchen Trolleys</li>
+                            <li>Kitchen Cabinets</li>
+                        </ul>
+                    </div>
+                    <div id="home_9">
+                        <p class="gallery_sub_items_header">MORE IN CLEANING & BATH</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Mops</li>
+                            <li>Cleaning Supplies</li>
+                            <li>House Hold Supplies</li>
+                            <li>Air Fresheners</li>
+                            <li>Cleaning Gloves</li>
+                            <li>Liquid Detergents</li>
+                            <li>Taps & Faucet</li>
+                            <li>Toothbrush Holder</li>
+                            <li>Bathroom Racks & Shelves</li>
+                            <li>Shower Heads</li>
+                            <li>Bath & Kitchen Fittings</li>
+                            <li>Bathroom Accessories</li>
+                        </ul>
+                    </div>
+                    <div id="home_10">
+                        <p class="gallery_sub_items_header">MORE IN KIDS FURNITURE</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Bunk Beds</li>
+                            <li>Kidss Seating</li>
+                            <li>Kid's Table</li>
+                            <li>Kid's Chairs</li>
+                            <li>Kid's Sofas</li>
+                            <li>Book Shelves</li>
+                            <li>Chest of Drawers</li>
+                            <li>Cupboards</li>
+                            <li>Shoe Racks</li>
+                            <li>Kid's Bean Bags</li>
+                            <li>Portable Pool</li>
+                            <li>Sofa Beds</li>
+                        </ul>
+                    </div>
+                    <div id="home_11">
+                        <p class="gallery_sub_items_header">MORE IN PET & GARDENING</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Plant Seeds</li>
+                            <li>Soil Manure</li>
+                            <li>Plots & Planters</li>
+                            <li>Plant & Planters</li>
+                            <li>Garden Tool Set</li>
+                            <li>Watering Equipments</li>
+                            <li>Dog Essentials</li>
+                            <li>Cat Essentials</li>
+                            <li>Fish & Aquatic</li>
+                            <li>Pet Grooming & Hygiene</li>
+                            <li>Pet Toys</li>
+                            <li>Pet Health & Safety</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item" id="appliances_gallery_item">
+                <img src="images/item_7_img.webp" alt="" id="img_7">
+                <div class="txt">
+                    <p id="item_7_txt">Appliances</p>
+                    <i id="arrow_2" class="uil uil-angle-down icon-arrow"></i>
+                </div>
+            </div>
+            <div class="gallery_sub_box" id="appliances_box">
+                <div class="gallery_items">
+                    <ul>
+                        <li id="appliances_gallery_item_1">
+                            <p>Televisions</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="appliances_gallery_item_2">
+                            <p>Washing Machines</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="appliances_gallery_item_3">
+                            <p>Air Conditioners</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="appliances_gallery_item_4">
+                            <p>Refrigenerators</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="appliances_gallery_item_5">
+                            <p>Kitchen Appliances</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="appliances_gallery_item_6">
+                            <p>Home Appliances</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="appliances_gallery_item_7">
+                            <p>Seasonal Appliances</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="appliances_gallery_item_8">
+                            <p>Premium Appliances</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="appliances_gallery_item_9">
+                            <p>Buying Guide</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="appliances_gallery_item_10">
+                            <p>Flipkart Benefits</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gallery_sub_items" id="appliances_gallery_sub_items">
+                    <div id="appliances_1">
+                        <p class="gallery_sub_items_header">MORE IN TELEVISIONS</p>
+                        <ul>
+                            <li>All</li>
+                            <li>New Launches</li>
+                            <li>Top Sellers</li>
+                            <li>24-32 Inch</li>
+                            <li>40-43 Inch</li>
+                            <li>50-55 Inch</li>
+                            <li>Big Screen TVs</li>
+                            <li>Smart TVs</li>
+                            <li>4K UHD TVs</li>
+                            <li>TV Frames</li>
+                            <li>OLED TVs</li>
+                            <li>QLED TVs</li>
+                            <li>Nanocell TVs</li>
+                        </ul>
+                    </div>
+                    <div id="appliances_2">
+                        <p class="gallery_sub_items_header">MORE IN WASHING MACHINES</p>
+                        <ul>
+                            <li>All</li>
+                            <li>New Launches</li>
+                            <li>Fully Automatic Front Load</li>
+                            <li>Semi Automatic Top Load</li>
+                            <li>Fully Automatic Top Load</li>
+                            <li>Washer Dryers</li>
+                            <li>Washer Only</li>
+                            <li>Dish Washers</li>
+                            <li>Energy Efficient</li>
+                            <li>#JustHere</li>
+                            <li>Best Sellers</li>
+                            <li>Top Brands</li>
+                        </ul>
+                    </div>
+                    <div id="appliances_3">
+                        <p class="gallery_sub_items_header">MORE IN AIR CONDITIONERS</p>
+                        <ul>
+                            <li>All</li>
+                            <li>New Launches</li>
+                            <li>Inverter ACs</li>
+                            <li>Split ACs</li>
+                            <li>Window ACs</li>
+                            <li>#JustHere</li>
+                            <li>Energy Efficient ACs</li>
+                            <li>5 star ACs</li>
+                            <li>Best Sellers</li>
+                            <li>1 Ton ACs</li>
+                            <li>1.5 Ton ACs</li>
+                            <li>Wi-fi Enabled</li>
+                            <li>Top Brands</li>
+                        </ul>
+                    </div>
+                    <div id="appliances_4">
+                        <p class="gallery_sub_items_header">MORE IN REFRIGENERATORS</p>
+                        <ul>
+                            <li>All</li>
+                            <li>New Launches</li>
+                            <li>Single Door</li>
+                            <li>Double Door</li>
+                            <li>Triple Door</li>
+                            <li>Side by Side</li>
+                            <li>4 Doors</li>
+                            <li>Mini Refrigenerators</li>
+                            <li>Convertible</li>
+                            <li>Bottom Mount</li>
+                            <li>Energy Efficient</li>
+                        </ul>
+                    </div>
+                    <div id="appliances_5">
+                        <p class="gallery_sub_items_header">MORE IN KITCHEN APPLIANCES</p>
+                        <ul>
+                            <li>All</li>
+                            <li>New Launches</li>
+                            <li>Microwave Ovens</li>
+                            <li>Oven Toaster Grills(OTG)</li>
+                            <li>Juicer/Mixer/Grinder</li>
+                            <li>Electric Kettle</li>
+                            <li>Induction Cooktops</li>
+                            <li>Chimneys</li>
+                            <li>Sandwich Makers</li>
+                            <li>Pop Up Toasters</li>
+                            <li>Electric Cookers</li>
+                            <li>Wet Grinders</li>
+                        </ul>
+                    </div>
+                    <div id="appliances_6">
+                        <p class="gallery_sub_items_header">MORE IN HOME APPLIANCES</p>
+                        <ul>
+                            <li>All</li>
+                            <li>New Launches</li>
+                            <li>Irons</li>
+                            <li>Water Purifiers</li>
+                            <li>Inverters</li>
+                            <li>Vacuum Cleaners</li>
+                            <li>Sewing Machines</li>
+                            <li>Voltage Stabilizers</li>
+                            <li>Air Purifiers</li>
+                            <li>Landline Phones</li>
+                        </ul>
+                    </div>
+                    <div id="appliances_7">
+                        <p class="gallery_sub_items_header">SEASONAL APPLIANCES</p>
+                        <ul>
+                            <li>All</li>
+                            <li>New Launches</li>
+                            <li>Air Coolers</li>
+                            <li>Fans</li>
+                            <li>Water Geysers</li>
+                            <li>Immersion Rods</li>
+                            <li>Room Heater</li>
+                        </ul>
+                    </div>
+                    <div id="appliances_8">
+                        <p class="gallery_sub_items_header">MORE IN PREMIUM APPLIANCES</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Premium Televisions</li>
+                            <li>Premium Washing Machines</li>
+                            <li>Side by Side Refrigenerators</li>
+                            <li>Vacuum Cleaners</li>
+                            <li>Dish Washers</li>
+                            <li>Premium ACs</li>
+                            <li>Designer Fans</li>
+                            <li>Washer Dryers</li>
+                            <li>Four Door Refrigenerators</li>
+
+                        </ul>
+                    </div>
+                    <div id="appliances_9">
+                        <p class="gallery_sub_items_header">MORE IN BUYING GUIDES</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Televisions</li>
+                            <li>Washing Machines</li>
+                            <li>Refrigenerators</li>
+                            <li>Air Conditioners</li>
+                            <li>Water Purifiers</li>
+                            <li>Air Purifiers</li>
+                            <li>Chimneys</li>
+                            <li>Water Geysers</li>
+                        </ul>
+                    </div>
+                    <div id="appliances_10">
+                        <p class="gallery_sub_items_header">MORE IN FLIPKART BENEFITS</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Exchange Offers</li>
+                            <li>No Cost EMIs</li>
+                            <li>Extended Warranty</li>
+                            <li>Complete Appliance Protection</li>
+                            <li>Save More on Business Purchase</li>
+                            <li>Appliance Service Plan=</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/item_8_img.webp" alt="" id="img_8">
+                <div class="txt">
+                    <p id="item_8_txt">Travel</p>
+                </div>
+            </div>
+            <div class="item" id="extra_gallery_item">
+                <img src="images/item_9_img.webp" alt="" id="img_9">
+                <div class="txt">
+                    <p id="item_9_txt">Beauty, Toys & More</p>
+                    <i id="arrow_2" class="uil uil-angle-down icon-arrow"></i>
+                </div>
+            </div>
+            <div class="gallery_sub_box" id="extra_box">
+                <div class="gallery_items">
+                    <ul>
+                        <li id="extra_gallery_item_1">
+                            <p>Beauty & Personal Care</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="extra_gallery_item_2">
+                            <p>Men's Grooming</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="extra_gallery_item_3">
+                            <p>Food & Drinks</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="extra_gallery_item_4">
+                            <p>Nutrition & Health Care</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="extra_gallery_item_5">
+                            <p>Baby Care</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="extra_gallery_item_6">
+                            <p>Toys & Schools Supplies</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="extra_gallery_item_7">
+                            <p>Sports & Fitness</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="extra_gallery_item_8">
+                            <p>Books & Music</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="extra_gallery_item_9">
+                            <p>Stationary & Office Supplies</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="extra_gallery_item_10">
+                            <p>Auto Accessories</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                        <li id="extra_gallery_item_11">
+                            <p>Safety & Hygiene Essentials</p>
+                            <i class="uil uil-angle-right-b icon-slider_arrow"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gallery_sub_items" id="extra_gallery_sub_items">
+                    <div id="extra_1">
+                        <p class="gallery_sub_items_header">BEAUTY & PERSONAL CARE</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Bath & Oral Care</li>
+                            <li>Personal Hygiene</li>
+                            <li>Eye Makeup</li>
+                            <li>Face Makeup</li>
+                            <li>Lip Makeup</li>
+                            <li>Hair Care</li>
+                            <li>Bath Essentials</li>
+                            <li>Women's Personal Hygiene</li>
+                            <li>Body & Skin Care</li>
+                            <li>Luxury</li>
+                            <li>Top Brand Deals</li>
+                        </ul>
+                    </div>
+                    <div id="extra_2">
+                        <p class="gallery_sub_items_header">MORE IN MEN'S GROOMING</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Face Washes</li>
+                            <li>Beard Oils</li>
+                            <li>Hair Styling</li>
+                            <li>Shaving Essentials</li>
+                            <li>Aftershave</li>
+                            <li>Face Creams & Face Packs</li>
+                            <li>Soaps & Body Washes</li>
+                            <li>Men's Grooming Combos</li>
+                            <li>Sexual Wellness</li>
+                        </ul>
+                    </div>
+                    <div id="extra_3">
+                        <p class="gallery_sub_items_header">MORE IN FOOD & DRINKS</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Beverages</li>
+                            <li>Nuts & Dry Fruits</li>
+                            <li>Cooking Essentials</li>
+                            <li>Breakfast Items</li>
+                            <li>Snacks Corner</li>
+                            <li>Jams, Spreads & Honey</li>
+                            <li>Ready to Cook & Eat</li>
+                            <li>Chocolates</li>
+                            <li>Baking Essentials</li>
+                            <li>Sweets Store</li>
+                            <li>Top Brand Deals</li>
+                        </ul>
+                    </div>
+                    <div id="extra_4">
+                        <p class="gallery_sub_items_header">NUTRITION & HEALTH CARE</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Masks</li>
+                            <li>Ayurvedic Supplements</li>
+                            <li>Health Drinks</li>
+                            <li>Vitaming Supplements</li>
+                            <li>Protein Supplements</li>
+                            <li>Women's Safety</li>
+                            <li>Home Medicines</li>
+                            <li>Home Medical Supplies</li>
+                            <li>Healthcare Combos</li>
+                            <li>Professional Medical Supplies</li>
+                            <li>To Brand Deals</li>
+                        </ul>
+                    </div>
+                    <div id="extra_5">
+                        <p class="gallery_sub_items_header">MORE IN BABY CARE</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Baby Diapers</li>
+                            <li>Baby Wipes</li>
+                            <li>Baby Bath & Grooming</li>
+                            <li>Baby Gift Sets & Combo</li>
+                            <li>Baby Medical & Health Care</li>
+                            <li>Nursing & Breast Feeding</li>
+                            <li>Feeding Bottles, Utensils & Accessories</li>
+                            <li>Baby Food</li>
+                            <li>Baby Bedding</li>
+                            <li>Baby Gear</li>
+                            <li>Top Brand Deals</li>
+                        </ul>
+                    </div>
+                    <div id="extra_6">
+                        <p class="gallery_sub_items_header">TOYS & SCHOOL SUPPLIES</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Remote Control Toys</li>
+                            <li>Soft Toys</li>
+                            <li>Puzzles</li>
+                            <li>Board Games</li>
+                            <li>Learning & Educational Toys</li>
+                            <li>Cars & Die-Cast Vehicles</li>
+                            <li>Baby Toys</li>
+                            <li>Gifting Toys</li>
+                            <li>School Bags & Backpacks</li>
+                            <li>Scholl Supplies</li>
+                            <li>Top Brand Deals</li>
+                        </ul>
+                    </div>
+                    <div id="extra_7">
+                        <p class="gallery_sub_items_header">MORE IN SPORTS & FITNESS</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Badminton</li>
+                            <li>Cricket</li>
+                            <li>Cycling</li>
+                            <li>Football</li>
+                            <li>Fitness Equipments</li>
+                            <li>Supports</li>
+                            <li>Shakers & Slippers</li>
+                            <li>Gym Gloves</li>
+                            <li>Dumbbells</li>
+                            <li>Yoga</li>
+                            <li>Top Brand Deals</li>
+                        </ul>
+                    </div>
+                    <div id="extra_8">
+                        <p class="gallery_sub_items_header">MORE IN BOOKS & MUSIC</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Test Prep</li>
+                            <li>Academics</li>
+                            <li>Literature & Fiction</li>
+                            <li>Non Fiction</li>
+                            <li>Young Readers</li>
+                            <li>E-Learning</li>
+                            <li>Indian Languages</li>
+                            <li>Acoustic Guitars</li>
+                            <li>Musical Keyboards</li>
+                            <li>Microphones</li>
+                            <li>Stage Equipment & Accessories</li>
+                        </ul>
+                    </div>
+                    <div id="extra_9">
+                        <p class="gallery_sub_items_header">STATIONERY & OFFICE SUPPLIES</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Pens & Gift Sets</li>
+                            <li>Note Books & Diaries</li>
+                            <li>Art Supplies</li>
+                            <li>Calculators</li>
+                            <li>Keychains</li>
+                            <li>Card Holders</li>
+                            <li>Desk Organizers</li>
+                            <li>Office Supplies</li>
+                            <li>Office Equipments</li>
+                            <li>Party Supplies</li>
+                            <li>Top Brand Deals</li>
+                        </ul>
+                    </div>
+                    <div id="extra_10">
+                        <p class="gallery_sub_items_header">MORE IN AUTO ACCESSORIES</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Bike Essentials</li>
+                            <li>Car & Bike Covers</li>
+                            <li>Car Air Fresheners</li>
+                            <li>Car Bluetooth Device</li>
+                            <li>Car Lubricants</li>
+                            <li>Car Vacuum Cleaner</li>
+                            <li>Car Media Player</li>
+                            <li>Helmet</li>
+                            <li>Vehicle Washing & Cleaning Products</li>
+                            <li>Tyres</li>
+                            <li>Top Brand Deals</li>
+                        </ul>
+                    </div>
+                    <div id="extra_11">
+                        <p class="gallery_sub_items_header">SAFETY & HYGIENE ESSENTIALS</p>
+                        <ul>
+                            <li>All</li>
+                            <li>Masks</li>
+                            <li>Sanitizers</li>
+                            <li>Hand Wash</li>
+                            <li>Gloves</li>
+                            <li>PPE Kits</li>
+                            <li>Face Shields</li>
+                            <li>UV Sterilizer Box</li>
+                            <li>Safety Goggles</li>
+                            <li>Vitamins for Immunity</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slider_1 -->
+        <div class="slider_1">
+            <div class="arrows">
+                <div id="left_arrow">
+                    <i class="uil uil-angle-left-b icon-slider_arrow" id="left_arrow_icon"></i>
+                </div>
+                <div id="right_arrow">
+                    <i class="uil uil-angle-right-b icon-slider_arrow" id="right_arrow_icon"></i>
+                </div>
+            </div>
+            <!-- SLIDER START -->
+            <div class="img_slider">
+                <!-- RADIO BUTTONS START -->
+                <input type="radio" name="radio-btn" id="radio_1">
+                <input type="radio" name="radio-btn" id="radio_2">
+                <input type="radio" name="radio-btn" id="radio_3">
+                <input type="radio" name="radio-btn" id="radio_4">
+                <input type="radio" name="radio-btn" id="radio_5">
+                <input type="radio" name="radio-btn" id="radio_6">
+                <!-- RADIO BUTTONS END -->
+                <!-- SLIDE IMAGES START -->
+                <div class="slide_1 morph_slide">
+                    <img src="images/slider_img_1a.png" id="first_slide_img" alt="">
+                </div>
+                <div class="slide_2 morph_slide">
+                    <img src="images/slider_img_2.png" alt="">
+                </div>
+                <div class="slide_3 morph_slide">
+                    <img src="images/slider_img_3.png" alt="">
+                </div>
+                <div class="slide_4 morph_slide">
+                    <img src="images/slider_img_4.png" alt="">
+                </div>
+                <div class="slide_5 morph_slide">
+                    <img src="images/slider_img_5.png" alt="">
+                </div>
+                <div class="slide_6 morph_slide">
+                    <img src="images/slider_img_6.png" alt="">
+                </div>
+                <!-- SLIDE IMAGES END -->
+                <!-- MANUAL NAVIGATION START -->
+                <div class="manual_navigation">
+                    <div class="label_box">
+                        <label id="manual_btn_1" for="radio_1" class="manual_btn ripple"></label>
+                        <label id="manual_btn_2" for="radio_2" class="manual_btn ripple"></label>
+                        <label id="manual_btn_3" for="radio_3" class="manual_btn ripple"></label>
+                        <label id="manual_btn_4" for="radio_4" class="manual_btn ripple"></label>
+                        <label id="manual_btn_5" for="radio_5" class="manual_btn ripple"></label>
+                        <label id="manual_btn_6" for="radio_6" class="manual_btn ripple"></label>
+                        <div class="transparent_label_box"></div>
+                    </div>
+                </div>
+                <!-- MANUAL NAVIGATION END -->
+            </div>
+            <!-- SLIDER END -->
+        </div>
+        <!-- Card-1 -->
+        <div class="card" id="card_1">
+            <!-- CARD HEADING -->
+            <div class="card_heading">
+                <div class="head_name">
+                    <h2>Bestselling Gaming Laptops</h2>
+                    <p id="price">From ₹50,000</p>
+                </div>
+                <div class="view_all">
+                    <p>VIEW ALL</p>
+                </div>
+            </div>
+            <!-- CARD CONTENT -->
+            <div class="card_items">
+                <!-- CARD ITEM BOX 1 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/hp_pavillion_1.webp" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>HP Pavilion Gaming Laptops</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(15.6 inches, Shadow Black, 1.98 kg, With MS Office)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.4</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(125)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹50,990</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 2 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/hp_omen.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>HP Omen Gaming Laptops</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(15.6 inch, Mica Silver, 2.37 Kg)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.8</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(24)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹66,990</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 3 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/hp_victus.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>HP Victus Gaming Laptops</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(16.1 inches, Mica Silver, Flicker Free Display, 2.48kg, With Ms Office)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.8</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(24)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹67,999</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 4 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/asus_rog_strix.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>Asus Rog Strix Gaming Laptops</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(15.6 inch, Black Plastic, 2.3 kg)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.8</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(24)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹71,990</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 5 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/acer_aspire.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>acer Aspire Gaming Laptops</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(15.6 inch, Charcoal Black, 2.15 kg)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.4</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(977)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹71,990</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 6 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/msi_bravo.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>MSI Bravo 15 Gaming Laptops</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(15.6 inch, Black, 1.96 KG)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(17)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹71,990</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 7 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/acer_nitro.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>acer Nitro 5 Gaming Laptops</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(15.6 inch, Obsidian Black, 2.3 kg)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.5</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(66)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹65,990</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 8 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/lenovo_ideapad.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>Lenovo Ideapad 3 Gaming Laptops</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(15.6 inch, Onyx Black, 2.2 kg)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.4</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(59)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹63,990</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 9 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/asus_tuf_a17.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>Asus Tuf A17 Gaming Laptops</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(17.3 inch, Gray Metal, 2.60 kg)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.7</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(17)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹66,990</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 10 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/asus_tuf_dash_f15.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>Asus Tuf Dash F15 Gaming Laptops</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(15.6 Inch, Eclipse Gray, 2 KG, With MS Office)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.3</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(13)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹86,990</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Card-2 -->
+        <div class="card" id="card_2">
+            <!-- CARD HEADING -->
+            <div class="card_heading">
+                <div class="head_name">
+                    <h2>Bestselling Pc Monitors</h2>
+                    <p id="price">From ₹6,990</p>
+                </div>
+                <div class="view_all">
+                    <p>VIEW ALL</p>
+                </div>
+            </div>
+            <!-- CARD CONTENT -->
+            <div class="card_items">
+                <!-- CARD ITEM BOX 1 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/acer_21.5.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>acer 21.5 inch Full HD LED Backlit VA Panel Monitor (EK220Q)</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Response Time: 5 ms, 75 Hz Refresh Rate)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.8</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(16)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹9,699</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 2 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/dell.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>DELL 27 inch Full HD IPS Panel Monitor (S2721HN)</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(AMD Free Sync, Response Time: 1 ms, 75 Hz Refresh Rate)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.4</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(43)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹13,140</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 3 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/hp_monitor.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>HP 23.8 inch Full HD LED Backlit IPS Panel Monitor (M24f)</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Response Time: 5 ms)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.3</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(9)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹13,399</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 4 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/lenovo_monitor.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>Lenovo 23.8 inch Full HD LED Backlit IPS Panel Monitor (Q24i-1L)</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(AMD Free Sync, Response Time: 4 ms)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.5</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(11)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹14,249</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 5 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/lg_monitor.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>LG 24 inch Full HD LED Backlit IPS Panel Gaming Monitor (24MP59G)</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(AMD Free Sync, Response Time: 1 ms, 75 Hz Refresh Rate)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.4</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(117)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹11,999
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 6 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/msi_monitor.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>MSI 27 inch Curved HD VA Panel Gaming Monitor (Optix G27CQ4)</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Response Time: 1 ms)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.1</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(11)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹24,999</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 7 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/samsung_monitor.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>SAMSUNG 27 inch Full HD LED Backlit IPS Panel Gaming Monitor (LF27T350FHWXXL)</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(AMD Free Sync, Response Time: 5 ms)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.1</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(6)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹16,758</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 8 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/viewsonic_monitor.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>VIEWSONIC 21.5 inch Full HD LED Backlit IPS Panel Monitor (VA2256H)</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Response Time: 5 ms)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.3</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(19)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹9,599</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 9 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/benq_monitor.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>BenQ 24 inch Full HD LED Backlit TN Panel Monitor (GL2480)</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Response Time: 1 ms, 75 Hz Refresh Rate)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.5</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(19)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹9,750</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 10 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/aoc_monitor.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>AOC 24 inch Full HD Monitor (24B2XH 24" Full HD Monitor, & Ultra Slim HDMI and VGA
+                                    inputs, Lowblue Mode)</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Response Time: 8 ms)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.3</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(16)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹9,999</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Card-3 -->
+        <div class="card" id="card_3">
+            <!-- CARD HEADING -->
+            <div class="card_heading">
+                <div class="head_name">
+                    <h2>Bestselling Mechanical Keyboards</h2>
+                    <p id="price">From ₹2,199</p>
+                </div>
+                <div class="view_all">
+                    <p>VIEW ALL</p>
+                </div>
+            </div>
+            <!-- CARD CONTENT -->
+            <div class="card_items">
+                <!-- CARD ITEM BOX 1 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/cosmic_byte_1.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>CosmicByte CB-GK-12 Neon Rainbow Mechanical Wired USB Gaming Keyboard</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Black)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.4</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(55)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹2,399</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 2 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/amkette_keyboard.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>AMKETTE EvoFox Fireblade LED Backlit Wired USB Gaming Keyboard</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Black)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.4</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(294)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹13,140</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 3 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/havit_keyboard.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>Havit Mechanical Keyboard Wired 89 Keys Gaming Keyboard Red Switch </p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Orange, Black)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.1</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(9)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹13,399</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 4 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/quantum_keyboard.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>QUANTUM QHM9800 Rapid Strike Mechanical Gaming Multimedia Wired Keyboard</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Black)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.4</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(14)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹1,799</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 5 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/hyperx_keyboard.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>HyperX Alloy Origins Core - Tenkeyless Mechanical Gaming Keyboard</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(HX-KB7RDX-US) Wired USB Gaming Keyboard (Black)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.6</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(13)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹8,990
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 6 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/zebronics_keyboard.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>ZEBRONICS MAX PRO MECHANICAL USB WIRED KEYBOARD</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Black)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.4</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(7)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹3,720</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 7 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/iquinix_joker_keyboard.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>IQUNIX F96-Joker Wireless Mechanical Keyboard </p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Wired + Wiredless, RGB LED, Cherry Switches)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>5</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(24)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹13,299</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 8 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/ant_sports_keyboard.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>Ant Esports MK1000 Wired TKL Mechanical Gaming Keyboard</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Black)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(9)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹2,825</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 9 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/circle_keyboard.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>Circle Matalloit X Semi Mechanical and Solid Aluminium Panel Base Keyboard</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Black, Blue)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>3.8</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(11)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹3,499</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 10 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/razer_keyboard.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>Razer BlackWidow Tournament Edition Chroma V2 Mechanical Green Switch</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Black)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.2</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(6)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹9,999</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Card-4 -->
+        <div class="card" id="card_4">
+            <!-- CARD HEADING -->
+            <div class="card_heading">
+                <div class="head_name">
+                    <h2>Bestselling Gaming Mouse</h2>
+                    <p id="price">From ₹1,899</p>
+                </div>
+                <div class="view_all">
+                    <p>VIEW ALL</p>
+                </div>
+            </div>
+            <!-- CARD CONTENT -->
+            <div class="card_items">
+                <!-- CARD ITEM BOX 1 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/hp_250_mouse.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>HP 250 Wireless Optical Mouse</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(2.4GHz Wireless, Black)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.5</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(710)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹749</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 2 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/logitech_mouse_1.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>Logitech B175 Wireless Optical Mouse</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(2.4GHz Wireless, Black)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.5</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(15,227)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹699</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 3 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/flipkart_smart_mouse.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>Flipkart SmartBuy V8 Wireless Optical Mouse</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(2.4GHz Wireless, Green)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.1</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(6)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹999</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 4 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/viboton_mouse.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>VIBOTON T-WOLF Q13 Wireless Rechargeable Gaming Mouse</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Rechargeable Wireless Laser Gaming Mouse 2.4GHz Wireless, Black)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.3</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(17)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹749</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 5 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/zebronics_mouse.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>ZEBRONICS Zeb-Dazzle Wireless Optical Gaming Mouse</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(2.4GHz Wireless, Black)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>3.6</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(793)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹320
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 6 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/rexter_mouse.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>Rexter A2 RGB Gaming Mouse, 1600 dpi, Ergonomic Hand Grips</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(2.4GHz Wireless, Bluetooth, Silver)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.3</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(12)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹849</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 7 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/logitech_lightspeed_mouse.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>Logitech G502 Lightspeed Wireless Optical Gaming Mouse</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(2.4GHz Wireless, Black)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>5</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(11)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹11,995</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 8 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/er_retail_mouse.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>ERetailMart 4GHz Wireless Mice With USB Receiver Gamer 2000DPI Mouse</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Bluetooth, 2.4GHz Wireless, Golden)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>3.7</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(23)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹449</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 9 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/hp_mouse.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>HP Z3700 Wireless Optical Mouse with Bluetooth</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(Black)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>4.4</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(273)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹1,079</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- CARD ITEM BOX 10 -->
+                <div class="card_item_box">
+                    <div class="card_item">
+                        <!-- CARD ITEM IMAGE -->
+                        <div class="card_item_img">
+                            <img class="card_hover_img" src="images/iron_man_mouse.png" alt="">
+                        </div>
+                        <!-- CARD ITEM TEXT PART -->
+                        <div class="card_item_txt">
+                            <div class="item_name">
+                                <p>HIVAGI Wireless Mouse Cool Iron Man Mouse</p>
+                            </div>
+                            <div class="item_description">
+                                <p>(2.4GHz Wireless, Gold)</p>
+                            </div>
+                            <div class="item_rating">
+                                <div class="rating_box">
+                                    <p>3.9</p>
+                                    <img id="rating_star" src="images/rating_star.ico" alt="">
+                                </div>
+                                <p>(11)</p>
+                                <img class="assured" src="images/flipkart_assured.png" alt="">
+                            </div>
+                            <div class="pricing">
+                                <p>From ₹1,424</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer_top">
+            <!-- DETAIL 1 -->
+            <div class="detail" id="detail_1">
+                <h4>ABOUT</h4>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Flipkart Stories</li>
+                    <li>Press</li>
+                    <li>Flipkart Wholesale</li>
+                    <li>Corporate Information</li>
+                </ul>
+            </div>
+            <!-- DETAIL 2 -->
+            <div class="detail" id="detail_2">
+                <h4>HELP</h4>
+                <ul>
+                    <li>Payments</li>
+                    <li>Shipping</li>
+                    <li>Cancellation & Returns</li>
+                    <li>FAQ</li>
+                    <li>Report Infringement</li>
+                </ul>
+            </div>
+            <!-- DETAIL 3 -->
+            <div class="detail" id="detail_3">
+                <h4>POLICY</h4>
+                <ul>
+                    <li>Return Policy</li>
+                    <li>Terms Of Use</li>
+                    <li>Security</li>
+                    <li>Privacy</li>
+                    <li>Sitemap</li>
+                    <li>EPR Compliance</li>
+                </ul>
+            </div>
+            <!-- DETAIL 4 -->
+            <div class="detail" id="detail_4">
+                <h4>SOCIAL</h4>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+            <!-- DETAIL 5 -->
+            <div class="detail" id="detail_5">
+                <div id="vr_line"></div>
+                <div id="detail_5_txt">
+                    <h4>Mail Us:</h4>
+                    <pre>
+Flipkart Internet Private Limited,
+Buildings Alyssa, Begonia &
+Clove Embassy Tech Village,
+Outer Ring Road, Devarabeesanahalli Village,
+Bengaluru, 560103,
+Karnataka, India
+                    </pre>
+                </div>
+            </div>
+            <!-- DETAIL 6 -->
+            <div class="detail" id="detail_6">
+                <h4>Registered Office Address:</h4>
+                <pre>
+Flipkart Internet Private Limited,
+Buildings Alyssa, Begonia &
+Clove Embassy Tech Village,
+Outer Ring Road, Devarabeesanahalli Village,
+Bengaluru, 560103,
+Karnataka, India
+CIN : U51109KA2012PTC066107
+Telephone: <span id="telephone">1800 202 9898</span>
+</pre>
+            </div>
+        </div>
+        <div class="footer_foot">
+            <div class="footer_bottom_box" id="footer_bottom_box_1">
+                <img src="images/footer_bag.png" alt="">
+                <p>Sell On Flipkart</p>
+            </div>
+            <div class="footer_bottom_box" id="footer_bottom_box_2">
+                <img src="images/footer_star.png" alt="">
+                <p>Advertise</p>
+            </div>
+            <div class="footer_bottom_box" id="footer_bottom_box_3">
+                <img src="images/footer_gift_card.png" alt="">
+                <p>Gift Cards</p>
+            </div>
+            <div class="footer_bottom_box" id="footer_bottom_box_4">
+                <img src="images/footer_help.png" alt="">
+                <p>Help Center</p>
+            </div>
+            <div class="footer_bottom_box" id="footer_bottom_box_5">
+                <p>&copy; 2007-2021 Flipkart.com</p>
+            </div>
+            <div class="footer_bottom_box" id="footer_bottom_box_6">
+                <img src="images/flipkart_footer_cards.png" alt="">
+            </div>
+        </div>
+    </footer>
+    <div class="pop_up" id="login_popup">
+        <div id="login_popup_box" class="popup_box">
+            <div id="login_popup_box_left" class="popup_box_left">
+                <div class="text_part">
+                    <p class="big_login_p">Login</p>
+                    <p class="small_login_p">Get access to your Orders, Wishlist and Recommendations</p>
+                </div>
+                <img src="images/login_popup_bg.png" alt="">
+            </div>
+            <div id="login_popup_box_right" class="popup_box_right">
+                <div class="popup_box_right_inside">
+                    <i id="email_icon" class="uil uil-envelope-alt"></i>
+                    <label id="login_popup_input_1_label" class="popup_input_label" for="login_popup_input_1">Enter Email / Mobile number</label>
+                    <input autocomplete="off" type="text" class="popup_input" name="popup_input" id="login_popup_input_1">
+                    <span id="login_input_1_border" class="input_border"></span>
+                    <div class="password_input">
+                        <i id="pass_key_icon" class="uil uil-key-skeleton-alt"></i>
+                        <label class="popup_input_label" for="login_popup_input_2" id="login_popup_input_2_label">Enter Password</label>
+                        <input autocomplete="off" type="password" class="popup_input" id="login_popup_input_2" maxlength="20">
+                        <div id="span_eye" title="Toggle Password View">
+                            <i id="eye_visible" class="uil uil-eye"></i>
+                            <i id="eye_slash" class="uil uil-eye-slash"></i>
+                        </div>
+                        <span class="input_inline_span">Forgot?</span>
+                        <span id="login_input_2_border" class="input_border"></span>
+                    </div>
+                    <p class="login_terms">By continuing, you agree to Flipkart's <span class="highlight">Terms of
+                            Use</span> and <span class="highlight">Privacy Policy</span>.</p>
+                    <button id="popup_login_button" class="popup_button" type="submit">Login</button>
+                    <p class="or">OR</p>
+                    <button class="popup_button popup_otp_button" type="submit">Request OTP</button>
+                </div>
+                <p class="create">New to Flipkart? Create an account</p>
+            </div>
+        </div>
+        <i title="Exit Login Popup(Escape)" id="login_popup_toggle" class="uil uil-times popup_toggle"></i>
+    </div>
+    <div class="pop_up" id="signup_popup">
+        <div id="signup_popup_box" class="popup_box">
+            <div id="signup_popup_box_left" class="popup_box_left">
+                <div id="signup_text_part" class="text_part">
+                    <p id="signup_big_login_p" class="big_login_p">Looks like you're new here!</p>
+                    <p class="small_login_p">Sign up with your mobile number to get started</p>
+                </div>
+                <img src="images/login_popup_bg.png" alt="">
+            </div>
+            <div id="signup_popup_box_right" class="popup_box_right">
+                <div class="popup_box_right_inside">
+                    <i id="phone_icon" class="uil uil-phone"></i>
+                    <label id="signup_popup_input_1_label" class="popup_input_label" for="signup_popup_input_1">Enter Mobile number</label>
+                    <input autocomplete="off" type="text" class="popup_input" id="signup_popup_input_1">
+                    <span id="signup_input_1_border" class="input_border"></span>
+                    <!-- <div class="password_input">
+                        <input autocomplete="off" type="text" class="popup_input" placeholder="Enter Password">
+                        <span>Forgot?</span>
+                    </div> -->
+                    <p class="login_terms">By continuing, you agree to Flipkart's <span class="highlight">Terms of
+                            Use</span> and <span class="highlight">Privacy Policy</span>.</p>
+                    <button class="popup_button" type="submit">Continue</button>
+                    <p class="or">OR</p>
+                    <button id="signup_popup_otp_button" class="popup_button popup_otp_button" type="submit">Existing User? Log In</button>
+                </div>
+                <p id="signup_create" class="create">New to Flipkart? Create an account</p>
+            </div>
+        </div>
+        <i title="Exit Signup Popup" id="signup_popup_toggle" class="uil uil-times popup_toggle" class="uil uil-times"></i>
+    </div>
+    <div class="spin_box">
+        <div class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+        </div>
+    </div>
+    <!-- <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script> -->
+    <!-- <script src="js/vanilla-tilt.js"></script> -->
+    <script src="js/script_1.js"></script>
+</body>
+
+</html>
