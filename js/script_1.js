@@ -126,7 +126,7 @@ setInterval(() => {
 
     document.querySelector(`#radio_${slide_counter}`).checked = true;
 
-}, 5000);
+}, 4000);
 // AUTOMATIC IMAGE SLIDIG END
 
 // LOGIN BUTTON MOUSEOVER START 
