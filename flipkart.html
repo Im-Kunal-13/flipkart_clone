@@ -17,12 +17,12 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="Slicebox-master/css/custom.css"> -->
-    <!-- <link rel="stylesheet" href="Slicebox-master/css/demo.css"> -->
-    <!-- <link rel="stylesheet" href="Slicebox-master/css/slicebox.css"> -->
-    <!-- <script src="Slicebox-master/js/modernizr.custom.46884.js"></script> -->
+    <link rel="stylesheet" href="Slicebox-master/css/custom.css">
+    <link rel="stylesheet" href="Slicebox-master/css/demo.css">
+    <link rel="stylesheet" href="Slicebox-master/css/slicebox.css">
+    <script src="Slicebox-master/js/modernizr.custom.46884.js"></script>
     <link rel="stylesheet" href="css/utils.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body class="defaultScroll">
@@ -148,7 +148,8 @@
             <i id="cart_logo" class="uil uil-shopping-cart-alt icon-cart"></i>
             <p>Cart</p>
         </div>
-        <input id="dark_mode_checkbox" type="checkbox" name="checkbox" id="checkbox" title="Activate dark mode(ctrl+shift+q)">
+        <input id="dark_mode_checkbox" type="checkbox" name="checkbox" id="checkbox"
+            title="Activate dark mode(ctrl+shift+q)">
         <i class="uil uil-moon" id="moon_icon"></i>
     </header>
     <main>
@@ -1383,7 +1384,7 @@
         <div class="slider_1">
             <div class="arrows">
                 <div id="left_arrow">
-                    <i class="uil uil-angle-left-b icon-slider_arrow" id="left_arrow_icon"></i>
+                    <i class="uil uil-angle-left-b icon-slider_arrow" id="left_arrow_icon" onclick="event.stopPropagation();"></i>
                 </div>
                 <div id="right_arrow">
                     <i class="uil uil-angle-right-b icon-slider_arrow" id="right_arrow_icon"></i>
@@ -1400,7 +1401,7 @@
                 <input type="radio" name="radio-btn" id="radio_6">
                 <!-- RADIO BUTTONS END -->
                 <!-- SLIDE IMAGES START -->
-                <div class="slide_1 morph_slide">
+                <!-- <div class="slide_1 morph_slide">
                     <img src="images/slider_img_1a.png" id="first_slide_img" alt="">
                 </div>
                 <div class="slide_2 morph_slide">
@@ -1417,23 +1418,46 @@
                 </div>
                 <div class="slide_6 morph_slide">
                     <img src="images/slider_img_6.png" alt="">
-                </div>
+                </div> -->
                 <!-- SLIDE IMAGES END -->
+
+                <!-- SLICEBOX SLIDE IMAGES START -->
+                <ul class="image_slide_box" id="image_slide_box">
+                    <li class="slide_1">
+                        <img src="images/slider_img_1a.png" id="first_slide_img" alt="">
+                    </li>
+                    <li class="slide_2">
+                        <img src="images/slider_img_2.png" alt="">
+                    </li>
+                    <li class="slide_3">
+                        <img src="images/slider_img_3.png" alt="">
+                    </li>
+                    <li class="slide_4">
+                        <img src="images/slider_img_4.png" alt="">
+                    </li>
+                    <li class="slide_5">
+                        <img src="images/slider_img_5.png" alt="">
+                    </li>
+                    <li class="slide_6">
+                        <img src="images/slider_img_6.png" alt="">
+                    </li>
+                </ul>
+                <!-- SLICEBOX SLIDE IMAGES END -->
                 <!-- MANUAL NAVIGATION START -->
                 <div class="manual_navigation">
-                    <div class="label_box">
-                        <label id="manual_btn_1" for="radio_1" class="manual_btn ripple"></label>
-                        <label id="manual_btn_2" for="radio_2" class="manual_btn ripple"></label>
-                        <label id="manual_btn_3" for="radio_3" class="manual_btn ripple"></label>
-                        <label id="manual_btn_4" for="radio_4" class="manual_btn ripple"></label>
-                        <label id="manual_btn_5" for="radio_5" class="manual_btn ripple"></label>
-                        <label id="manual_btn_6" for="radio_6" class="manual_btn ripple"></label>
-                        <div class="transparent_label_box"></div>
-                    </div>
+                    <!-- <div class="label_box"> -->
+                    <label id="manual_btn_1" for="radio_1" class="manual_btn ripple" onclick="checkChange(1);"></label>
+                    <label id="manual_btn_2" for="radio_2" class="manual_btn ripple" onclick="checkChange(2);"></label>
+                    <label id="manual_btn_3" for="radio_3" class="manual_btn ripple" onclick="checkChange(3);"></label>
+                    <label id="manual_btn_4" for="radio_4" class="manual_btn ripple" onclick="checkChange(4);"></label>
+                    <label id="manual_btn_5" for="radio_5" class="manual_btn ripple" onclick="checkChange(5);"></label>
+                    <label id="manual_btn_6" for="radio_6" class="manual_btn ripple" onclick="checkChange(6);"></label>
+                    <div class="transparent_label_box"></div>
                 </div>
-                <!-- MANUAL NAVIGATION END -->
             </div>
-            <!-- SLIDER END -->
+            <!-- MANUAL NAVIGATION END -->
+        </div>
+        <!-- SLIDER END -->
         </div>
         <!-- Card-1 -->
         <div class="card" id="card_1">
@@ -2782,13 +2806,17 @@ Telephone: <span id="telephone">1800 202 9898</span>
             <div id="login_popup_box_right" class="popup_box_right">
                 <div class="popup_box_right_inside">
                     <i id="email_icon" class="uil uil-envelope-alt"></i>
-                    <label id="login_popup_input_1_label" class="popup_input_label" for="login_popup_input_1">Enter Email / Mobile number</label>
-                    <input autocomplete="off" type="text" class="popup_input" name="popup_input" id="login_popup_input_1">
+                    <label id="login_popup_input_1_label" class="popup_input_label" for="login_popup_input_1">Enter
+                        Email / Mobile number</label>
+                    <input autocomplete="off" type="text" class="popup_input" name="popup_input"
+                        id="login_popup_input_1">
                     <span id="login_input_1_border" class="input_border"></span>
                     <div class="password_input">
                         <i id="pass_key_icon" class="uil uil-key-skeleton-alt"></i>
-                        <label class="popup_input_label" for="login_popup_input_2" id="login_popup_input_2_label">Enter Password</label>
-                        <input autocomplete="off" type="password" class="popup_input" id="login_popup_input_2" maxlength="20">
+                        <label class="popup_input_label" for="login_popup_input_2" id="login_popup_input_2_label">Enter
+                            Password</label>
+                        <input autocomplete="off" type="password" class="popup_input" id="login_popup_input_2"
+                            maxlength="20">
                         <div id="span_eye" title="Toggle Password View">
                             <i id="eye_visible" class="uil uil-eye"></i>
                             <i id="eye_slash" class="uil uil-eye-slash"></i>
@@ -2819,7 +2847,8 @@ Telephone: <span id="telephone">1800 202 9898</span>
             <div id="signup_popup_box_right" class="popup_box_right">
                 <div class="popup_box_right_inside">
                     <i id="phone_icon" class="uil uil-phone"></i>
-                    <label id="signup_popup_input_1_label" class="popup_input_label" for="signup_popup_input_1">Enter Mobile number</label>
+                    <label id="signup_popup_input_1_label" class="popup_input_label" for="signup_popup_input_1">Enter
+                        Mobile number</label>
                     <input autocomplete="off" type="text" class="popup_input" id="signup_popup_input_1">
                     <span id="signup_input_1_border" class="input_border"></span>
                     <!-- <div class="password_input">
@@ -2830,12 +2859,14 @@ Telephone: <span id="telephone">1800 202 9898</span>
                             Use</span> and <span class="highlight">Privacy Policy</span>.</p>
                     <button class="popup_button" type="submit">Continue</button>
                     <p class="or">OR</p>
-                    <button id="signup_popup_otp_button" class="popup_button popup_otp_button" type="submit">Existing User? Log In</button>
+                    <button id="signup_popup_otp_button" class="popup_button popup_otp_button" type="submit">Existing
+                        User? Log In</button>
                 </div>
                 <p id="signup_create" class="create">New to Flipkart? Create an account</p>
             </div>
         </div>
-        <i title="Exit Signup Popup" id="signup_popup_toggle" class="uil uil-times popup_toggle" class="uil uil-times"></i>
+        <i title="Exit Signup Popup" id="signup_popup_toggle" class="uil uil-times popup_toggle"
+            class="uil uil-times"></i>
     </div>
     <div class="spin_box">
         <div class="loader">

@@ -1,5 +1,5 @@
 /* Slicebox Style */
-.sb-slider {
+.image_slide_box {
 	margin: 10px auto;
 	position: relative;
 	overflow: hidden;
@@ -8,21 +8,21 @@
 	padding: 0;
 }
 
-.sb-slider li {
+.image_slide_box li {
 	margin: 0;
 	padding: 0;
 	display: none;
 }
 
-.sb-slider li > a {
+.image_slide_box li > a {
 	outline: none;
 }
 
-.sb-slider li > a img {
+.image_slide_box li > a img {
 	border: none;
 }
 
-.sb-slider img {
+.image_slide_box img {
 	max-width: 100%;
 	display: block;
 }
@@ -49,13 +49,13 @@
 	transition: all 200ms;
 }
 
-.sb-slider li.sb-current .sb-description {
+.image_slide_box li.sb-current .sb-description {
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 	filter: alpha(opacity=80);	
 	opacity: 1;
 }
 
-.sb-slider li.sb-current .sb-description:hover {
+.image_slide_box li.sb-current .sb-description:hover {
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=99)";
 	filter: alpha(opacity=99);	
 	background: rgba(190,176,155, 0.7);

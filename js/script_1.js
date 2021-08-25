@@ -6,10 +6,15 @@ var allow_slide = true;
 
 // LEFT AND RIGHT ARROW BUTTONS SLIDING WORKING START.
 left_arrow_icon.addEventListener('click', () => {
+    right_arrow.dispatchEvent(new Event('click'));
     // FINDING WHICH RADIO BUTTON IS PRESENTLY CHECKED AND CHANGIND THAT ACCORDIGLY.
     for (let i = 1; i <= 6; i++) {
         if (document.querySelector(`#radio_${i}`).checked && i > 1) {
             document.querySelector(`#radio_${i - 1}`).checked = true;
+            break;
+        }
+        else if(document.querySelector(`#radio_1`).checked){
+            document.querySelector('#radio_6').checked = true;
             break;
         }
     }
@@ -18,8 +23,14 @@ left_arrow_icon.addEventListener('click', () => {
 right_arrow_icon.addEventListener('click', () => {
     // FINDING WHICH RADIO BUTTON IS PRESENTLY CHECKED AND CHANGIND THAT ACCORDIGLY.
     for (let i = 1; i <= 6; i++) {
+        console.log(document.querySelector(`#radio_${i}`).checked);
+        
         if (document.querySelector(`#radio_${i}`).checked && i < 6) {
             document.querySelector(`#radio_${i + 1}`).checked = true;
+            break;
+        }
+        else if(document.querySelector('#radio_6').checked){
+            document.querySelector(`#radio_1`).checked = true;
             break;
         }
     }
@@ -69,70 +80,51 @@ footer_bottom_box_6.addEventListener('mouseup', () => {
 
 
 // AUTOMATIC IMAGE SLIDIG START 
-var slide_counter = 1
-var slide_reverse = false;
+var slide_counter = 1;
 document.querySelector(`#radio_${slide_counter}`).checked = true;
 
 
 // RIPPLE ON CLICK EFFECT START 
 var previous = 0;
-setInterval(() => {
-    for (let i = 1; i <= 6; i++) {
-        if (document.querySelector(`#radio_${i}`).checked && i != previous) {
-            previous = i;
-            document.querySelector(`#manual_btn_${i}`).dispatchEvent(new Event('click'));
-        }
+
+// BUTTON MANUAL CLICK FUNCTION START 
+function checkChange(index){
+    if(index != previous){
+        previous = index;
+        right_arrow.click();
     }
-}, 100);
-
-
+}
+// BUTTON MANUAL CLICK FUNCTION END
 // RIPPLE ON CLICK EFFECT END
-
 
 
 setInterval(() => {
     // CHECKING WHICH RADIO BUTTON IS PRESENTLY CHECKED AND CHANGING THAT ACCORDINGLY 
 
     for (let i = 1; i <= 6; i++) {
-        if (document.querySelector(`#radio_${i}`).checked) {
+        if (document.querySelector(`#radio_${i}`).checked){
             slide_counter = i;
             break;
         }
     }
-
     if (slide_counter == 6) {
-        slide_reverse = true;
-    }
-    else if (slide_counter == 1) {
-        slide_reverse = false;
-    }
-
-    if (slide_reverse) {
-        slide_counter--;
-
-        setTimeout(() => {
-            left_arrow_icon.dispatchEvent(new Event('mousedown'));
-        }, 50);
-
-        setTimeout(() => {
-            left_arrow_icon.dispatchEvent(new Event('mouseup'));
-        }, 200);
-
-        document.querySelector(`#radio_${slide_counter}`).checked = true;
+        slide_counter = 1;
     }
     else {
         slide_counter++;
-
-        setTimeout(() => {
-            right_arrow_icon.dispatchEvent(new Event('mousedown'));
-        }, 50);
-
-        setTimeout(() => {
-            right_arrow_icon.dispatchEvent(new Event('mouseup'));
-        }, 200);
-
-        document.querySelector(`#radio_${slide_counter}`).checked = true;
     }
+
+    setTimeout(() => {
+        right_arrow_icon.dispatchEvent(new Event('mousedown'));
+    }, 50);
+
+    right_arrow.dispatchEvent(new Event('click'));
+
+    setTimeout(() => {
+        right_arrow_icon.dispatchEvent(new Event('mouseup'));
+    }, 200);
+
+    document.querySelector(`#radio_${slide_counter}`).checked = true;
 
 }, 5000);
 // AUTOMATIC IMAGE SLIDIG END
@@ -806,7 +798,7 @@ dark_mode_checkbox.addEventListener('change', () => {
             prices.forEach(price => {
                 price.style.color = "var(--rating_box)";
             });
-            
+
             document.documentElement.style.setProperty('--icon-hover', '#2874f021');
 
             document.documentElement.style.setProperty('--arrow-click', '#2874f070');
@@ -863,50 +855,52 @@ dark_mode_checkbox.addEventListener('change', () => {
 
 // SLICEBOX WORKING START
 
-// $(function(){
-//     var Page = (function(){
-//         var $navArrows = $('#nav-arrows').hide(),
-//             $shadow = $('#shadow').hide(),
+$(function () {
+    var Page = (function () {
+        var $navArrows = $('.arrows'),
+            // $shadow = $('#shadow').hide(),
 
-//             slicebox = $('#image_slide_box').slicebox({
-//                 onReady : function(){
-//                     $navArrows.show();
-//                     $shadow.show();
-//                 }, 
+            slicebox = $('#image_slide_box').slicebox({
+                onReady: function () {
+                    $navArrows.show();
+                    // $shadow.show();
+                },
 
-//                 orientation: 'h',
-//                 cuboidsRandom: false,
-//                 cuboidsCount: 5,
-//                 maxCuboidsCount : 5,
-//                 easing: 'ease',
-//                 fallbackFadeSpeed : 300,
-//                 speed: 500,
-//                 disperseFactor: 30
-//             }),
+                orientation: 'r',
+                cuboidsRandom: false,
+                cuboidsCount: 5,
+                maxCuboidsCount: 5,
+                easing: 'ease',
+                fallbackFadeSpeed: 300,
+                speed: 500,
+                disperseFactor: 30
+            }),
 
-//             init = function(){
-//                 initEvents();
-//             },
+            init = function () {
+                initEvents();
+            },
 
-//             initEvents = function(){
-//                 $navArrows.children(':first').on('click', 
-//                 function(){
-//                     slicebox.next();
-//                     return false;
-//                 });
+            initEvents = function () {
+                $navArrows.children(':last').on('click',
+                    function () {
+                        slicebox.next();
+                        return false;
+                    });
 
-//                 $navArrows.children(':last').on('click',
-//                 function(){
-//                     slicebox.previous();
-//                     return false;
-//                 });
-//             };
+                // $navArrows.children(':first').on('click',
+                //     function () {
+                //         slicebox.previous();
+                //         return false;
+                //     });
+            };
 
-//             return { init : init };
+        return { init: init };
 
-//     })();
+    })();
 
-//     Page.init();
-// });
+    Page.init();
+});
 
 // SLICEBOX WORKING END
+
+
