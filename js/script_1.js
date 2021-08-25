@@ -258,6 +258,7 @@ login_popup_toggle.addEventListener('click', () => {
     }, 100);
 
     setTimeout(() => {
+        login_popup_input_2.type = "password";
         login_popup.style.display = "none";
     }, 300);
 })

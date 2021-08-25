@@ -2857,7 +2857,7 @@ Telephone: <span id="telephone">1800 202 9898</span>
                     <i id="phone_icon" class="uil uil-phone"></i>
                     <label id="signup_popup_input_1_label" class="popup_input_label" for="signup_popup_input_1">Enter
                         Mobile number</label>
-                    <input autocomplete="off" type="text" class="popup_input" id="signup_popup_input_1">
+                    <input autocomplete="off" type="number" class="popup_input" id="signup_popup_input_1" maxLength="10" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
                     <span id="signup_input_1_border" class="input_border"></span>
                     <!-- <div class="password_input">
                         <input autocomplete="off" type="text" class="popup_input" placeholder="Enter Password">
