@@ -850,13 +850,63 @@ dark_mode_checkbox.addEventListener('change', () => {
 
 // IMAGE_SLIDER_CARD_TILT HOVER START
 
-VanillaTilt.init(document.querySelectorAll(".morph_slide"), {
-    speed: 1000,
-    glare: true,
-    "max-glare" : .3,
-    // reverse: false
-    max: 10,
-    perspective: 750,
-});
+// VanillaTilt.init(document.querySelectorAll(".morph_slide"), {
+//     speed: 1000,
+//     glare: true,
+//     "max-glare" : .3,
+//     // reverse: false
+//     max: 10,
+//     perspective: 750,
+// });
 
 // IMAGE_SLIDER_CARD_TILT HOVER END
+
+// SLICEBOX WORKING START
+
+// $(function(){
+//     var Page = (function(){
+//         var $navArrows = $('#nav-arrows').hide(),
+//             $shadow = $('#shadow').hide(),
+
+//             slicebox = $('#image_slide_box').slicebox({
+//                 onReady : function(){
+//                     $navArrows.show();
+//                     $shadow.show();
+//                 }, 
+
+//                 orientation: 'h',
+//                 cuboidsRandom: false,
+//                 cuboidsCount: 5,
+//                 maxCuboidsCount : 5,
+//                 easing: 'ease',
+//                 fallbackFadeSpeed : 300,
+//                 speed: 500,
+//                 disperseFactor: 30
+//             }),
+
+//             init = function(){
+//                 initEvents();
+//             },
+
+//             initEvents = function(){
+//                 $navArrows.children(':first').on('click', 
+//                 function(){
+//                     slicebox.next();
+//                     return false;
+//                 });
+
+//                 $navArrows.children(':last').on('click',
+//                 function(){
+//                     slicebox.previous();
+//                     return false;
+//                 });
+//             };
+
+//             return { init : init };
+
+//     })();
+
+//     Page.init();
+// });
+
+// SLICEBOX WORKING END
