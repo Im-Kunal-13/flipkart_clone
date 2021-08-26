@@ -23,7 +23,7 @@ left_arrow_icon.addEventListener('click', () => {
 right_arrow_icon.addEventListener('click', () => {
     // FINDING WHICH RADIO BUTTON IS PRESENTLY CHECKED AND CHANGIND THAT ACCORDIGLY.
     for (let i = 1; i <= 6; i++) {
-        console.log(document.querySelector(`#radio_${i}`).checked);
+        // console.log(document.querySelector(`#radio_${i}`).checked);
         
         if (document.querySelector(`#radio_${i}`).checked && i < 6) {
             document.querySelector(`#radio_${i + 1}`).checked = true;
