@@ -4,6 +4,16 @@
     padding: 0;
 }
 
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+}
+
 :root {
     --rating-box: #388e3c;
     --footer-black: #172337;
@@ -204,7 +214,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 56px;
+    height: 3.5rem;
     background-color: var(--flipkart-blue);
     color: white;
     font-size: 20px;
@@ -227,21 +237,21 @@ header {
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 0 50px;
+    padding: 0 3.1rem;
 }
 
 .fl_logo {
-    height: 20px;
+    height: 1.25rem;
     cursor: pointer;
 }
 
 #logo_txt {
     position: relative;
-    font-size: 11px;
+    font-size: .7rem;
     font-style: italic;
     font-family: Roboto, Arial, sans-serif;
     font-weight: lighter;
-    left: 3px;
+    left: .1rem;
     cursor: pointer;
 }
 
@@ -269,14 +279,14 @@ header {
 .search_box {
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 .55rem;
     background-color: white;
     border-radius: 10px;
 }
 
 #search_box {
     height: 35px;
-    width: 350px;
+    width: 22rem;
     border: 0;
     /* border-top: 1px solid black;
     border-bottom: 1px solid black; */
@@ -301,7 +311,7 @@ header {
     width: 25px;
     background-color: white;
     border-width: 0px;
-    padding: 0 25px;
+    padding: 0 1.6rem;
 }
 
 .search-icon i {
@@ -316,13 +326,13 @@ header {
 
 #mic_button_box {
     border-left-width: 0;
-    width: 35px;
+    width: 2rem;
 }
 
 #cam_button_box {
     border-left-width: 0;
     /* border-right: 1px solid black; */
-    width: 35px;
+    width: 2rem;
 }
 
 #mic_button_box .search-icon {
@@ -355,9 +365,9 @@ i#cam_icon:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
-    width: 60px;
-    margin: 0 20px;
+    height: 1.9rem;
+    width: 3.7rem;
+    margin: 0 1.2rem;
     border: 1px solid white;
     border-top-color: rgb(158, 158, 158);
     border-left-color: rgb(158, 158, 158);
@@ -376,10 +386,10 @@ i#cam_icon:hover {
     background-color: var(--flipkart-blue);
     color: white;
     font-size: 10px;
-    height: 30px;
-    width: 60px;
+    height: 1.9rem;
+    width: 3.7rem;
     font-family: 'Bree Serif', serif;
-    border-width: 0px;
+    border-width: 0;
     cursor: pointer;
     outline: none;
     position: sticky;
@@ -439,8 +449,8 @@ i#cam_icon:hover {
     background-color: white;
     /* background-color: #e2e2e2c0; */
     color: var(--flipkart-blue);
-    height: 33px;
-    width: 125px;
+    height: 2.08rem;
+    width: 8rem;
     margin: 0 1rem;
     border: none;
     border-radius: 10px;
@@ -540,7 +550,7 @@ i#cam_icon:hover {
     font-size: 17px;
     padding: 0 2rem;
     cursor: pointer;
-    width: 65px;
+    width: 4rem;
 }
 
 .more i {
@@ -621,8 +631,8 @@ i.uil-copy {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 65px;
-    height: 40px;
+    width: 4rem;
+    height: 2.5rem;
     cursor: pointer;
 }
 
@@ -662,7 +672,7 @@ input[id="dark_mode_checkbox"] {
     outline: none;
     border-radius: 4rem;
     box-shadow: 0 0 0 4px #353535, 0 0 0 5px #3e3e3e, inset 0 0 10px rgba(0, 0, 0, 1), 0 5px 20px rgba(0, 0, 0, .5), inset 0 0 15px rgba(0, 0, 0, .2);
-    margin: 0 10px 0 50px;
+    margin: 0 .6rem 0 3rem;
 }
 
 input:checked[id="dark_mode_checkbox"] {
